@@ -11,8 +11,8 @@
 - **shoulder_length** (number)
 - **shoulder_diameter** (number)
 - **anchor_length** (number)
-- **Input** (number)
-- **Input_1** (number)
+- **anchor_diameter** (number)
+- **tip_length** (number)
 
 
 
