@@ -12,27 +12,30 @@
     },
     {
       "name": "nc_diamter",
-      "ioValue": 10
+      "ioValue": 6.325,
+      "currentEquation": "6.325"
     },
     {
       "name": "shoulder_length",
-      "ioValue": 10
+      "ioValue": 3
     },
     {
       "name": "shoulder_diameter",
-      "ioValue": 10
+      "ioValue": 6
     },
     {
       "name": "anchor_length",
-      "ioValue": 10
+      "ioValue": 0.75,
+      "currentEquation": ".75"
     },
     {
-      "name": "Input",
-      "ioValue": 10
+      "name": "anchor_diameter",
+      "ioValue": 0.5
     },
     {
-      "name": "Input_1",
-      "ioValue": 10
+      "name": "tip_length",
+      "ioValue": 1.1438,
+      "currentEquation": "1.1438"
     }
   ],
   "topLevel": true,
@@ -94,6 +97,7 @@
       "x": 0,
       "y": 0.6,
       "uniqueID": "id-27",
+      "name": "anchor_diameter",
       "options": []
     },
     {
@@ -101,59 +105,38 @@
       "x": 0,
       "y": 0.7,
       "uniqueID": "id-30",
-      "name": "Input_1",
+      "name": "tip_length",
       "options": []
     },
     {
-      "atomType": "Molecule",
+      "atomType": "Assembly",
       "x": 0.2,
       "y": 0.3,
-      "uniqueID": "id-4",
-      "name": "nc",
-      "topLevel": false,
-      "allAtoms": [
+      "uniqueID": "id-50",
+      "ioValues": [
         {
-          "atomType": "Output",
-          "x": 1,
-          "y": 0.5,
-          "uniqueID": "id-6",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        }
-      ],
-      "allConnectors": [],
-      "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.2,
-      "y": 0.6,
-      "uniqueID": "id-8",
-      "name": "mold",
-      "topLevel": false,
-      "allAtoms": [
+          "name": "Shape 1",
+          "ioValue": null
+        },
         {
-          "atomType": "Output",
-          "x": 1,
-          "y": 0.5,
-          "uniqueID": "id-10",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
+          "name": "Shape 2",
+          "ioValue": null
         }
-      ],
-      "allConnectors": [],
-      "fileTypeVersion": 1
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-12",
+      "ap2ID": "id-50"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-15",
+      "ap2ID": "id-50"
+    }
+  ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
