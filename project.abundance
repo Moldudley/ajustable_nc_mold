@@ -1,13 +1,160 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "ajustable_nc_mold",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "ajustable_nc_mold",
+  "ioValues": [
+    {
+      "name": "nc_length",
+      "ioValue": 19,
+      "currentEquation": "19"
+    },
+    {
+      "name": "nc_diamter",
+      "ioValue": 10
+    },
+    {
+      "name": "shoulder_length",
+      "ioValue": 10
+    },
+    {
+      "name": "shoulder_diameter",
+      "ioValue": 10
+    },
+    {
+      "name": "anchor_length",
+      "ioValue": 10
+    },
+    {
+      "name": "Input",
+      "ioValue": 10
+    },
+    {
+      "name": "Input_1",
+      "ioValue": 10
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.2,
+      "uniqueID": "id-12",
+      "name": "nc_length",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.2,
+      "uniqueID": "id-15",
+      "name": "nc_diamter",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.3,
+      "uniqueID": "id-18",
+      "name": "shoulder_length",
+      "options": []
+    },
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.4,
+      "uniqueID": "id-21",
+      "name": "shoulder_diameter",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.5,
+      "uniqueID": "id-24",
+      "name": "anchor_length",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.6,
+      "uniqueID": "id-27",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.7,
+      "uniqueID": "id-30",
+      "name": "Input_1",
+      "options": []
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2,
+      "y": 0.3,
+      "uniqueID": "id-4",
+      "name": "nc",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-6",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2,
+      "y": 0.6,
+      "uniqueID": "id-8",
+      "name": "mold",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-10",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
