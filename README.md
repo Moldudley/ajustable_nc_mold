@@ -10,9 +10,6 @@
 - **nc_diamter** (number)
 - **shoulder_length** (number)
 - **shoulder_diameter** (number)
-- **anchor_length** (number)
-- **anchor_diameter** (number)
-- **tip_length** (number)
 - **wall_thickness** (number)
 
 
