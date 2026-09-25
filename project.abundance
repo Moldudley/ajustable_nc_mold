@@ -37,8 +37,8 @@
   "allAtoms": [
     {
       "atomType": "Molecule",
-      "x": 0.2,
-      "y": 0.7,
+      "x": 0.4,
+      "y": 0.4,
       "uniqueID": "id-101",
       "name": "anchor",
       "ioValues": [
@@ -157,6 +157,22 @@
               "currentEquation": "6"
             }
           ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.6,
+          "y": 0.5,
+          "uniqueID": "id-136",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -181,9 +197,24 @@
           "ap2ID": "id-124"
         },
         {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-124",
+          "ap2ID": "id-136"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-128",
           "ap2ID": "id-132"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-132",
+          "ap2ID": "id-136"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-136",
+          "ap2ID": "id-103"
         }
       ],
       "fileTypeVersion": 1
@@ -205,12 +236,75 @@
       "options": []
     },
     {
+      "atomType": "Difference",
+      "x": 0.5,
+      "y": 0.2,
+      "uniqueID": "id-141",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5,
+      "y": 0.4,
+      "uniqueID": "id-145",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 20.8562
+        }
+      ]
+    },
+    {
       "atomType": "Input",
       "x": 0,
       "y": 0.2,
       "uniqueID": "id-15",
       "name": "nc_diamter",
       "options": []
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.4,
+      "y": 0.3,
+      "uniqueID": "id-151",
+      "name": "x + y-z",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 3,
+          "currentEquation": "1"
+        },
+        {
+          "name": "y",
+          "ioValue": 19
+        },
+        {
+          "name": "z",
+          "ioValue": 1.1438
+        }
+      ],
+      "currentEquation": "x + y-z"
     },
     {
       "atomType": "Input",
@@ -455,8 +549,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.9,
-      "y": 0.5,
+      "x": 0.4,
+      "y": 0.2,
       "uniqueID": "id-96",
       "ioValues": [
         {
@@ -482,6 +576,11 @@
       "ap2ID": "id-92"
     },
     {
+      "ap2Name": "y",
+      "ap1ID": "id-12",
+      "ap2ID": "id-151"
+    },
+    {
       "ap2Name": "Outer_Diameter",
       "ap1ID": "id-15",
       "ap2ID": "id-71"
@@ -495,6 +594,11 @@
       "ap2Name": "y",
       "ap1ID": "id-18",
       "ap2ID": "id-92"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-18",
+      "ap2ID": "id-151"
     },
     {
       "ap2Name": "diameter",
@@ -527,9 +631,34 @@
       "ap2ID": "id-86"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "retain",
       "ap1ID": "id-96",
+      "ap2ID": "id-141"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-101",
+      "ap2ID": "id-145"
+    },
+    {
+      "ap2Name": "z",
+      "ap1ID": "id-114",
+      "ap2ID": "id-151"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-141",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-145",
+      "ap2ID": "id-141"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-151",
+      "ap2ID": "id-145"
     }
   ],
   "unitsKey": "Inches",
