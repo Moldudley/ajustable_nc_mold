@@ -6,12 +6,12 @@
 
 ## Inputs
 
+- **metal_tip_length** (number)
 - **nc_length** (number)
 - **nc_diamter** (number)
 - **shoulder_length** (number)
 - **shoulder_diameter** (number)
 - **wall_thickness** (number)
-- **metal_tip_length** (number)
 
 
 
