@@ -231,7 +231,7 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.5,
+      "x": 0.6,
       "y": 0.2,
       "uniqueID": "id-141",
       "ioValues": [
@@ -357,7 +357,7 @@
     {
       "atomType": "Extrude",
       "x": 0.3,
-      "y": 0.7,
+      "y": 0.6,
       "uniqueID": "id-242",
       "ioValues": [
         {
@@ -539,7 +539,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0
+          "ioValue": 22.25
         }
       ]
     },
@@ -548,6 +548,183 @@
       "x": 0.3,
       "y": 0.9,
       "uniqueID": "id-277",
+      "name": "x +.25",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 22
+        }
+      ],
+      "currentEquation": "x +.25"
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.5,
+      "y": 0.7,
+      "uniqueID": "id-281",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "extrude-circle-3.4125-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "move-fb49b83a-0-0-0-22.25",
+            "color": "#aad7f2",
+            "tags": [
+              "nose-cone",
+              "haack-series"
+            ],
+            "bom": [
+              "Haack series nose cone, length 19.25mm, outer diameter 6.825mm, C=0"
+            ],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "metadata": {},
+            "dimension": "3D"
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6,
+      "y": 0.7,
+      "uniqueID": "id-286",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.7,
+      "y": 0.1,
+      "uniqueID": "id-290",
+      "name": "cube",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-292",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.1,
+          "y": 0.3,
+          "uniqueID": "id-294",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 6
+            },
+            {
+              "name": "y length",
+              "ioValue": 6
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.2,
+          "y": 0.3,
+          "uniqueID": "id-298",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 6
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-294",
+          "ap2ID": "id-298"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.9,
+      "y": 0.2,
+      "uniqueID": "id-302",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.8,
+      "y": 0.6,
+      "uniqueID": "id-306",
       "name": "x + y",
       "ioValues": [
         {
@@ -887,6 +1064,11 @@
       "ap2ID": "id-86"
     },
     {
+      "ap2Name": "x",
+      "ap1ID": "id-92",
+      "ap2ID": "id-277"
+    },
+    {
       "ap2Name": "retain",
       "ap1ID": "id-96",
       "ap2ID": "id-141"
@@ -917,6 +1099,11 @@
       "ap2ID": "id-252"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-242",
+      "ap2ID": "id-281"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-252",
       "ap2ID": "id-271"
@@ -925,6 +1112,26 @@
       "ap2Name": "Length",
       "ap1ID": "id-267",
       "ap2ID": "id-252"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-271",
+      "ap2ID": "id-281"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-277",
+      "ap2ID": "id-271"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-281",
+      "ap2ID": "id-286"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-290",
+      "ap2ID": "id-302"
     }
   ],
   "unitsKey": "Inches",
