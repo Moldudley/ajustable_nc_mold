@@ -231,7 +231,7 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6,
+      "x": 0.5,
       "y": 0.2,
       "uniqueID": "id-141",
       "ioValues": [
@@ -559,8 +559,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.5,
-      "y": 0.7,
+      "x": 0.4,
+      "y": 0.6,
       "uniqueID": "id-281",
       "ioValues": [
         {
@@ -628,7 +628,7 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6,
+      "x": 0.5,
       "y": 0.7,
       "uniqueID": "id-286",
       "ioValues": [
@@ -644,7 +644,7 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.7,
+      "x": 0.3,
       "y": 0.1,
       "uniqueID": "id-290",
       "name": "cube",
@@ -700,43 +700,76 @@
           "ap2Name": "geometry",
           "ap1ID": "id-294",
           "ap2ID": "id-298"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-298",
+          "ap2ID": "id-292"
         }
       ],
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Extrude",
-      "x": 0.9,
-      "y": 0.2,
-      "uniqueID": "id-302",
+      "atomType": "Equation",
+      "x": 0.3,
+      "y": 0.1,
+      "uniqueID": "id-306",
+      "name": "x + y -z +.25",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 19
+        },
+        {
+          "name": "y",
+          "ioValue": 3
+        },
+        {
+          "name": "z",
+          "ioValue": 1.1438
+        }
+      ],
+      "currentEquation": "x + y -z +.25"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5,
+      "y": 0.1,
+      "uniqueID": "id-315",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "height",
-          "ioValue": 10
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 21.1062
         }
       ]
     },
     {
-      "atomType": "Equation",
-      "x": 0.8,
-      "y": 0.6,
-      "uniqueID": "id-306",
-      "name": "x + y",
+      "atomType": "Assembly",
+      "x": 0.6,
+      "y": 0.2,
+      "uniqueID": "id-322",
       "ioValues": [
         {
-          "name": "x",
-          "ioValue": 1
+          "name": "Shape 1",
+          "ioValue": null
         },
         {
-          "name": "y",
-          "ioValue": 1
+          "name": "Shape 2",
+          "ioValue": null
         }
-      ],
-      "currentEquation": "x + y"
+      ]
     },
     {
       "atomType": "Circle",
@@ -974,6 +1007,11 @@
       "ap2ID": "id-151"
     },
     {
+      "ap2Name": "z",
+      "ap1ID": "id-114",
+      "ap2ID": "id-306"
+    },
+    {
       "ap2Name": "Length",
       "ap1ID": "id-12",
       "ap2ID": "id-71"
@@ -994,9 +1032,14 @@
       "ap2ID": "id-267"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "x",
+      "ap1ID": "id-12",
+      "ap2ID": "id-306"
+    },
+    {
+      "ap2Name": "Shape 1",
       "ap1ID": "id-141",
-      "ap2ID": "id-2"
+      "ap2ID": "id-322"
     },
     {
       "ap2Name": "remove",
@@ -1037,6 +1080,11 @@
       "ap2Name": "height",
       "ap1ID": "id-18",
       "ap2ID": "id-242"
+    },
+    {
+      "ap2Name": "y",
+      "ap1ID": "id-18",
+      "ap2ID": "id-306"
     },
     {
       "ap2Name": "diameter",
@@ -1131,7 +1179,22 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-290",
-      "ap2ID": "id-302"
+      "ap2ID": "id-315"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-306",
+      "ap2ID": "id-315"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-315",
+      "ap2ID": "id-322"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-322",
+      "ap2ID": "id-286"
     }
   ],
   "unitsKey": "Inches",
