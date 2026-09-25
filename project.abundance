@@ -25,7 +25,12 @@
     },
     {
       "name": "wall_thickness",
-      "ioValue": 10
+      "ioValue": 0.079,
+      "currentEquation": "0.079"
+    },
+    {
+      "name": "metal_tip_length",
+      "ioValue": 1.1438
     }
   ],
   "topLevel": true,
@@ -36,6 +41,18 @@
       "y": 0.7,
       "uniqueID": "id-101",
       "name": "anchor",
+      "ioValues": [
+        {
+          "name": "anchor_length",
+          "ioValue": 0.75,
+          "currentEquation": ".75"
+        },
+        {
+          "name": "anchor_diameter",
+          "ioValue": 0.5,
+          "currentEquation": ".5"
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -49,10 +66,135 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-105",
+          "name": "anchor_length",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-108",
+          "name": "anchor_diameter",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.1,
+          "y": 0.3,
+          "uniqueID": "id-117",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 0.5
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.2,
+          "y": 0.1,
+          "uniqueID": "id-120",
+          "name": "x*-1",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 0.75
+            }
+          ],
+          "currentEquation": "x*-1"
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.2,
+          "y": 0.3,
+          "uniqueID": "id-124",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": -0.75
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.2,
+          "y": 0.6,
+          "uniqueID": "id-128",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 6
+            },
+            {
+              "name": "y length",
+              "ioValue": 6
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.3,
+          "y": 0.6,
+          "uniqueID": "id-132",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 6,
+              "currentEquation": "6"
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-105",
+          "ap2ID": "id-120"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-108",
+          "ap2ID": "id-117"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-117",
+          "ap2ID": "id-124"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-120",
+          "ap2ID": "id-124"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-128",
+          "ap2ID": "id-132"
+        }
+      ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.7,
+      "uniqueID": "id-114",
+      "name": "metal_tip_length",
+      "options": []
     },
     {
       "atomType": "Input",
