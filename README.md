@@ -13,6 +13,7 @@
 - **anchor_length** (number)
 - **anchor_diameter** (number)
 - **tip_length** (number)
+- **wall_thickness** (number)
 
 
 
