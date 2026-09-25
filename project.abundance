@@ -486,6 +486,33 @@
             "metadata": {},
             "dimension": "3D"
           }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": {
+            "geometry": "fuse-extrude-rectangle-0.5-7.825-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3-loft-move-rectangle-0.5-4-0-0-0-move-rectangle-0.5-7.825-0-0-0-{\"origin\":[0,0,21.1062],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,3],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--",
+            "tags": [],
+            "bom": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "dimension": "3D"
+          }
         }
       ],
       "unionType": "Fusion"
@@ -493,7 +520,7 @@
     {
       "atomType": "Difference",
       "x": 0.6,
-      "y": 0.4,
+      "y": 0.6,
       "uniqueID": "id-286",
       "ioValues": [
         {
@@ -1004,35 +1031,6 @@
             "tags": [],
             "bom": []
           }
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": {
-            "geometry": "cut-cut-cut-fuse-extrude-circle-3.4125-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3-move-fb49b83a-0-0-0-22.25-cut-cut-move-97360860-0-0-0-22-move-extrude-circle-0.25-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--0.75-0-0-20.8562-move-extrude-rectangle-6-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-6-0-0-20.8562-extrude-circle-3-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3-move-extrude-rectangle-6-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-6-0-0-21.1062",
-            "tags": [],
-            "bom": [
-              "Haack series nose cone, length 19.25mm, outer diameter 6.825mm, C=0"
-            ],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "dimension": "3D"
-          }
         }
       ],
       "unionType": "Fusion"
@@ -1062,6 +1060,269 @@
         }
       ],
       "currentEquation": "x + 1.5"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.7,
+      "y": 0.6,
+      "uniqueID": "id-572",
+      "name": "Cross-Section",
+      "ioValues": [
+        {
+          "name": "Offset",
+          "ioValue": 0
+        },
+        {
+          "name": "Angle X",
+          "ioValue": 0
+        },
+        {
+          "name": "Angle Z",
+          "ioValue": 0
+        },
+        {
+          "name": "Angle Y",
+          "ioValue": 90,
+          "currentEquation": "90"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-561",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-562",
+          "name": "Geometry",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-563",
+          "name": "Offset",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.3,
+          "uniqueID": "id-564",
+          "name": "Angle X",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.4,
+          "uniqueID": "id-565",
+          "name": "Angle Z",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.5,
+          "uniqueID": "id-566",
+          "name": "Angle Y",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.2,
+          "y": 0.4,
+          "uniqueID": "id-567",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 40000
+            },
+            {
+              "name": "y length",
+              "ioValue": 40000
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.3,
+          "y": 0.5,
+          "uniqueID": "id-568",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 4000
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.3,
+          "y": 0.7,
+          "uniqueID": "id-569",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.4,
+          "y": 0.8,
+          "uniqueID": "id-570",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 90
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.5,
+          "y": 0.2,
+          "uniqueID": "id-571",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-562",
+          "ap2ID": "id-571"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-563",
+          "ap2ID": "id-569"
+        },
+        {
+          "ap2Name": "x-axis degrees",
+          "ap1ID": "id-564",
+          "ap2ID": "id-570"
+        },
+        {
+          "ap2Name": "z-axis degrees",
+          "ap1ID": "id-565",
+          "ap2ID": "id-570"
+        },
+        {
+          "ap2Name": "y-axis degrees",
+          "ap1ID": "id-566",
+          "ap2ID": "id-570"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-567",
+          "ap2ID": "id-568"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-568",
+          "ap2ID": "id-569"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-569",
+          "ap2ID": "id-570"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-570",
+          "ap2ID": "id-571"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-571",
+          "ap2ID": "id-561"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-09-20T02:23:39.099Z",
+        "privateRepo": false,
+        "repoName": "Cross-Section",
+        "dateCreated": "2025-02-04T20:50:02Z",
+        "likes": 0,
+        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Cross-Section/master/project.png?sanitize=true",
+        "readme": "https://raw.githubusercontent.com/BarbourSmith/Cross-Section/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "",
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Cross-Section",
+        "topics": [],
+        "pullRequests": [],
+        "forks": 0,
+        "dateModified": "2026-01-23T18:20:41Z",
+        "ranking": 3,
+        "searchField": "cross-section barboursmith takes a cross section of the input ",
+        "owner": "BarbourSmith",
+        "description": "Takes a cross section of the input",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Cross-Section/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Cross-Section/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1790377716777
     },
     {
       "atomType": "Input",
@@ -1422,9 +1683,9 @@
       "ap2ID": "id-286"
     },
     {
-      "ap2Name": "Shape 3",
+      "ap2Name": "Geometry",
       "ap1ID": "id-286",
-      "ap2ID": "id-545"
+      "ap2ID": "id-572"
     },
     {
       "ap2Name": "zDist",
@@ -1532,14 +1793,19 @@
       "ap2ID": "id-545"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "Shape 3",
       "ap1ID": "id-545",
-      "ap2ID": "id-2"
+      "ap2ID": "id-281"
     },
     {
       "ap2Name": "y length",
       "ap1ID": "id-550",
       "ap2ID": "id-516"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-572",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "Inches",
