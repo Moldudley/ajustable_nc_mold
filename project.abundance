@@ -27,7 +27,8 @@
     },
     {
       "name": "wall_thickness",
-      "ioValue": 0.079
+      "ioValue": 0.079,
+      "currentEquation": "0.079"
     }
   ],
   "topLevel": true,
@@ -734,8 +735,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 7,
-          "currentEquation": "7"
+          "ioValue": 7
         }
       ]
     },
@@ -759,8 +759,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
@@ -1605,13 +1604,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -9,
-              "currentEquation": "-9"
+              "ioValue": -9
             },
             {
               "name": "yDist",
-              "ioValue": 3.2,
-              "currentEquation": "3.2"
+              "ioValue": 3.2
             },
             {
               "name": "zDist",
@@ -1711,13 +1708,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -9,
-              "currentEquation": "-9"
+              "ioValue": -9
             },
             {
               "name": "yDist",
-              "ioValue": -3.2,
-              "currentEquation": "-3.2"
+              "ioValue": -3.2
             },
             {
               "name": "zDist",
@@ -1737,13 +1732,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -12,
-              "currentEquation": "-12"
+              "ioValue": -12
             },
             {
               "name": "yDist",
-              "ioValue": 2.8,
-              "currentEquation": "2.8"
+              "ioValue": 2.8
             },
             {
               "name": "zDist",
@@ -1763,13 +1756,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -20,
-              "currentEquation": "-20"
+              "ioValue": -20
             },
             {
               "name": "yDist",
-              "ioValue": -1.2,
-              "currentEquation": "-1.2"
+              "ioValue": -1.2
             },
             {
               "name": "zDist",
@@ -1789,13 +1780,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -20,
-              "currentEquation": "-20"
+              "ioValue": -20
             },
             {
               "name": "yDist",
-              "ioValue": 1.2,
-              "currentEquation": "1.2"
+              "ioValue": 1.2
             },
             {
               "name": "zDist",
@@ -1815,13 +1804,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": -12,
-              "currentEquation": "-12"
+              "ioValue": -12
             },
             {
               "name": "yDist",
-              "ioValue": -2.8,
-              "currentEquation": "-2.8"
+              "ioValue": -2.8
             },
             {
               "name": "zDist",
@@ -1961,13 +1948,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 0.5,
-          "currentEquation": "0.5"
+          "ioValue": 0.5
         },
         {
           "name": "y length",
-          "ioValue": 3,
-          "currentEquation": "3"
+          "ioValue": 3
         }
       ]
     },
@@ -2069,7 +2054,7 @@
         },
         {
           "name": "Shape 3",
-          "ioValue": null
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
       "closedSelection": 0
@@ -2341,6 +2326,21 @@
       "ap2ID": "id-96"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-900",
+      "ap2ID": "id-904"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-904",
+      "ap2ID": "id-910"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-910",
+      "ap2ID": "id-545"
+    },
+    {
       "ap2Name": "zDist",
       "ap1ID": "id-92",
       "ap2ID": "id-86"
@@ -2384,21 +2384,6 @@
       "ap2Name": "Shape 3",
       "ap1ID": "id-800",
       "ap2ID": "id-322"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-900",
-      "ap2ID": "id-904"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-904",
-      "ap2ID": "id-910"
-    },
-    {
-      "ap2Name": "Shape 3",
-      "ap1ID": "id-910",
-      "ap2ID": "id-545"
     }
   ],
   "unitsKey": "Inches",
